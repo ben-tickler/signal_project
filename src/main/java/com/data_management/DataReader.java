@@ -1,6 +1,7 @@
 package com.data_management;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface DataReader {
     /**
@@ -10,4 +11,6 @@ public interface DataReader {
      * @throws IOException if there is an error reading the data
      */
     void readData(DataStorage dataStorage) throws IOException;
+
+    List<PatientRecord> readData();
 }
